@@ -1,0 +1,37 @@
+/* Paleta Análoga ao Azul */
+:root {
+  --cor-principal: #0077b6;   /* Azul médio */
+  --cor-secundaria: #00b4d8;  /* Azul claro */
+  --cor-terciaria: #90e0ef;   /* Azul bem clarinho */
+  --cor-destaque: #caf0f8;    /* Verde-água */
+}
+
+body {
+  background-color: var(--cor-terciaria);
+  font-family: Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: var(--cor-principal);
+}
+
+h2 {
+  color: var(--cor-secundaria);
+}
+
+a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+a:hover {
+  background-color: var(--cor-secundaria);
+}
