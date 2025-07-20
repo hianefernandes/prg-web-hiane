@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>LuxHouse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">ALPHAIMOVEIS - ALPHAVILLE</h1>
+        <img src="img/logo.png">
+        <nav>
+            <ul>
+                <li><a href="#">Comprar</a></li>
+                <li><a href="#">Alugar</a></li>
+                <li><a href="#">Anunciar</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="login.html">Entrar</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>ENCONTRE SEU IMÓVEL PERFEITO </h2>
+        <p>Mais oportunidades, menos complicação.</p>
+    </section>
+
+    <section class="search-box">
+        <h3>Busque seu imóvel ideal</h3>
+        <div class="busca">
+            <input type="text" placeholder="Digite a cidade...">
+            <button>Buscar imóveis</button>
+        </div>
+    </section>
+
+    <section class="imoveis">
+        <h3>Anúncios em destaque</h3>
+        <div class="cards-container">
+            <!-- IMOVEIS -->
+            <div class="card">
+                <div class="carousel">
+                    <img src="img/casa1-1.jpg">
+                    <img src="img/casa1-2.jpg">
+                    <img src="img/casa1-3.jpg">
+                </div>
+                <h4>Moema - São Paulo</h4>
+                <p>Valor: R$ 1.200.000</p>
+                <p>3 Quartos - 2 Banheiros</p>
+                <button onclick="favoritar(this)">Favoritar 🤍</button>
+            </div>
+
+            <div class="card">
+                <div class="vendido">Alugado</div>
+                <div class="carousel">
+                    <img src="img/casa2-1.jpg">
+                    <img src="img/casa2-2.jpg">
+                    <img src="img/casa2-3.jpg">
+                </div>
+                <h4>Savassi - BH</h4>
+                <p>Valor: R$ 850.000</p>
+                <p>2 Quartos - 2 Banheiros</p>
+                <button onclick="favoritar(this)">Favoritar 🤍</button>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="img/casa3-1.jpg">
+                    <img src="img/casa3-2.jpg">
+                    <img src="img/casa3-3.jpg">
+                </div>
+                <h4>Alphaville - São Paulo</h4>
+                <p>Valor: R$ 1.400.000</p>
+                <p>3 Quartos - 2 Banheiros</p>
+                <button onclick="favoritar(this)">Favoritar 🤍</button>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="img/casa4-1.jpg">
+                    <img src="img/casa4-2.jpg">
+                    <img src="img/casa4-3.jpg">
+                </div>
+                <h4>Tamboré - São Paulo</h4>
+                <p>Valor: R$ 1.500.000</p>
+                <p>4 Quartos - 2 Banheiros</p>
+                <button onclick="favoritar(this)">Favoritar 🤍</button>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="img/casa5-1.jpg">
+                    <img src="img/casa5-2.jpg">
+                    <img src="img/casa5-3.jpg">
+                </div>
+                <h4>Tambore 2 - São Paulo</h4>
+                <p>Valor: R$ 1.700.000</p>
+                <p>5 Quartos - 4 Banheiros</p>
+                <button onclick="favoritar(this)">Favoritar 🤍</button>
+            </div>
+            <!-- anúncios -->
+        </div>
+    </section>
+</body>
+</html>

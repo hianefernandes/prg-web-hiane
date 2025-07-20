@@ -1,0 +1,123 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.search-box {
+    padding: 30px;
+    text-align: center;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.cards-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+.vendido {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 400px;
+    margin: 50px auto;
+    gap: 10px;
+}

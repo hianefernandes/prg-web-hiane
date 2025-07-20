@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro | LuxHouse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/usuario.js" defer></script>
+</head>
+<body>
+    <section class="form-container">
+        <h2>Cadastrar Usuário</h2>
+        <input type="text" id="nome" placeholder="Nome completo">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="password" id="senha" placeholder="Senha">
+        <button onclick="cadastrarUsuario()">Cadastrar</button>
+    </section>
+
+    <script type="module">
+    import { cadastrar } from './js/controllerUsuario.js';
+
+    window.cadastrarUsuario = () => {
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const senha = document.getElementById('senha').value;
+        cadastrar(nome, email, senha);
+    };
+</script>
+</body>
+</html>
